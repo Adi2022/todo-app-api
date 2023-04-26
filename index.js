@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 8080;
 
 // middleware
 app.use(express.json())
-
+app.use(cors())
 // middleware
 app.use('/api/v1/todos',require("./routes/todos"));
 
